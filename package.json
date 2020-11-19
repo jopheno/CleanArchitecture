@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/reyhammer/CleanArchitecture/issues"
   },
-  "homepage": "https://github.com/reyhammer/CleanArchitecture#readme"
+  "homepage": "https://github.com/reyhammer/CleanArchitecture#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.0.0"
+  }
 }
