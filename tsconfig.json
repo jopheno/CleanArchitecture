@@ -9,6 +9,7 @@
         "paths": {
             "@models/*": ["./src/models/*"],
             "@ports/*": ["./src/ports/*"],
+            "@entities/*": ["./src/entities/*"],
             "@repositories/*": ["src/repositories/*"]
         }
     }

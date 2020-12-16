@@ -51,6 +51,7 @@ module.exports = {
   moduleNameMapper: {
     '^@models/(.*)$': '<rootDir>/src/models/$1',
     '^@ports/(.*)$': '<rootDir>/src/ports/$1',
+    '^@entities/(.*)$': '<rootDir>/src/entities/$1',
     '^@repositories/(.*)$': '<rootDir>/src/repositories/$1'
   }
 
