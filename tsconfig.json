@@ -8,6 +8,7 @@
         "baseUrl": ".",
         "paths": {
             "@ports/*": ["./src/ports/*"],
+            "@shared/*": ["./src/shared/*"],
             "@entities/*": ["./src/entities/*"],
             "@repositories/*": ["src/repositories/*"]
         }
