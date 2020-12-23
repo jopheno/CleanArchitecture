@@ -49,7 +49,6 @@ module.exports = {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '^@models/(.*)$': '<rootDir>/src/models/$1',
     '^@ports/(.*)$': '<rootDir>/src/ports/$1',
     '^@entities/(.*)$': '<rootDir>/src/entities/$1',
     '^@repositories/(.*)$': '<rootDir>/src/repositories/$1'
