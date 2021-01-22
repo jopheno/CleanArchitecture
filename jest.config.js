@@ -8,7 +8,7 @@ module.exports = {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  roots: ['<rootDir>/src'],
+  roots: ['<rootDir>/test'],
 
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -55,8 +55,8 @@ module.exports = {
   moduleNameMapper: {
     '^@ports/(.*)$': '<rootDir>/src/ports/$1',
     '^@shared/(.*)$': '<rootDir>/src/shared/$1',
-    '^@entities/(.*)$': '<rootDir>/src/entities/$1',
-    '^@repositories/(.*)$': '<rootDir>/src/repositories/$1'
+    '^@usecases/(.*)$': '<rootDir>/src/usecases/$1',
+    '^@entities/(.*)$': '<rootDir>/src/entities/$1'
   }
 
   // A list of reporter names that Jest uses when writing coverage reports
