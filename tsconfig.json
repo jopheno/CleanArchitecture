@@ -7,10 +7,12 @@
         "allowJs": true,
         "baseUrl": ".",
         "paths": {
-            "@ports/*": ["./src/ports/*"],
-            "@shared/*": ["./src/shared/*"],
-            "@usecases/*": ["./src/usecases/*"],
-            "@entities/*": ["./src/entities/*"]
+            "@/*": ["./src/*"],
+            "@test/*": ["./test/*"],
+            "@ports": ["./src/ports"],
+            "@shared": ["./src/shared"],
+            "@usecases": ["./src/usecases"],
+            "@entities": ["./src/entities"]
         }
     }
 }

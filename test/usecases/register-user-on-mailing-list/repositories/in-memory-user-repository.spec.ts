@@ -1,4 +1,4 @@
-import { UserData } from '@entities/index'
+import { UserData } from '@entities'
 import { InMemoryUserRepository } from '.'
 
 describe('In memory User repository', () => {

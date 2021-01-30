@@ -28,6 +28,7 @@ module.exports = {
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
+    '<rootDir>/test/**/*.ts',
     '!**/test/**',
     '!**/config/**'
   ],
@@ -53,10 +54,12 @@ module.exports = {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '^@ports/(.*)$': '<rootDir>/src/ports/$1',
-    '^@shared/(.*)$': '<rootDir>/src/shared/$1',
-    '^@usecases/(.*)$': '<rootDir>/src/usecases/$1',
-    '^@entities/(.*)$': '<rootDir>/src/entities/$1'
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@test/(.*)$': '<rootDir>/test/$1',
+    '^@ports': '<rootDir>/src/ports',
+    '^@shared': '<rootDir>/src/shared',
+    '^@usecases': '<rootDir>/src/usecases',
+    '^@entities': '<rootDir>/src/entities'
   }
 
   // A list of reporter names that Jest uses when writing coverage reports

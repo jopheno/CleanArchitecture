@@ -1,5 +1,5 @@
-import { left, right } from '@shared/index'
-import { InvalidEmailError } from '@entities/errors'
+import { left, right } from '@shared'
+import { InvalidEmailError } from '@/entities/errors'
 
 export class Email {
   public readonly value: string
