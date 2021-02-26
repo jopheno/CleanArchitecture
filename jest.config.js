@@ -44,9 +44,6 @@ module.exports = {
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
 
-  // The test environment that will be used for testing
-  testEnvironment: 'node',
-
   // A map from regular expressions to paths to transformers
   transform: {
     '.+\\.ts$': 'ts-jest'
@@ -60,7 +57,10 @@ module.exports = {
     '^@shared': '<rootDir>/src/shared',
     '^@usecases': '<rootDir>/src/usecases',
     '^@entities': '<rootDir>/src/entities'
-  }
+  },
+
+  // A preset that is used as a base for Jest's configuration
+  preset: '@shelf/jest-mongodb'
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -117,9 +117,6 @@ module.exports = {
 
   // An enum that specifies notification mode. Requires { notify: true }
   // notifyMode: "failure-change",
-
-  // A preset that is used as a base for Jest's configuration
-  // preset: undefined,
 
   // Run tests from one or more projects
   // projects: undefined,
